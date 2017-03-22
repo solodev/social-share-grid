@@ -187,6 +187,8 @@ p {
 }
 .fa { 
   margin-top:30px;
-  font-size: 60px;
   color: white;
+}
+.fa:before { 
+  font-size: 60px;
 }
