@@ -1,0 +1,192 @@
+h2 {
+  font-size: 40px;
+}
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.ct-tabs-outer .item {
+  display: block;
+  position: relative;
+  margin: 15px 0;
+  z-index: 1;
+  width: 100%;
+  height: 184px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  background-color: #0b71a9;
+}
+.ct-tabs-outer .item .item_content p {
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0 10px;
+}
+.ct-tabs-outer .inner {
+  padding-top: 14px;
+  height: 120px;
+}
+@keyframes solutions_icon_visibility {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+.ct-tabs-outer .item:hover .visible {
+  -webkit-animation: solutions_icon_visibility opacity .5s alternate;
+  -moz-animation: solutions_icon_visibility opacity .5s alternate;
+  -o-animation: solutions_icon_visibility opacity .5s alternate;
+  animation: solutions_icon_visibility opacity .5s alternate;
+  -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);
+  opacity: 0;
+}
+@keyframes solutions_title {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-90px);
+    transform: translateY(-90px);
+  }
+}
+.ct-tabs-outer .item:hover .item_title {
+  -webkit-animation: solutions_title .5s alternate;
+  -moz-animation: solutions_title .5s alternate;
+  -o-animation: solutions_title .5s alternate;
+  animation: solutions_title .5s alternate;
+  -webkit-transform: translateY(-90px);
+  transform: translateY(-90px);
+}
+@keyframes solutions_content {
+  0% {
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  100% {
+    -webkit-transform: translateY(-85px);
+    transform: translateY(-85px);
+  }
+}
+.ct-tabs-outer .item:hover .item_content {
+  -webkit-animation: solutions_content .5s alternate;
+  -moz-animation: solutions_content .5s alternate;
+  -o-animation: solutions_content .5s alternate;
+  animation: solutions_content .5s alternate;
+  -webkit-transform: translateY(-85px);
+  transform: translateY(-85px);
+}
+.ct-tabs-outer .item .visible,
+.ct-tabs-outer .item .item_title,
+.ct-tabs-outer .item .item_content {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+}
+.ct-tabs-outer .item .item_content {
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+  opacity: 0;
+}
+.ct-tabs-outer .item:hover .item_content {
+  opacity: 1;
+}
+.ct-tabs-outer .item .item_content a {
+  color: #fff;
+  font-size: 1.6rem;
+}
+.ct-tabs-outer .item:hover {
+  background-color: #085179;
+}
+.ct-tabs-outer .item h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: "proxima-nova", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+.ct-tab-content {
+  display: none;
+  overflow: hidden;
+  opacity: 0;
+  margin: 10px 0;
+}
+.ct-tab-content .inner {
+  padding: 30px 30px 20px 0;
+  background-image: none !important;
+  text-align: left;
+  position: relative;
+}
+.ct-tab-content .widget-close {
+  left: auto;
+  right: 20px;
+  top: 15px;
+  color: #636363;
+  position: absolute;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  z-index: 1;
+}
+.ct-tab-content .inner h4 {
+  font-size: 3rem;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+}
+.ct-tab-content .btn {
+  font-weight: 600;
+  padding: 12px 35px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  border: 1px solid #c8cbd0;
+  color: #53565c;
+}
+.ct-tab-content .btn img {
+  top: -2px;
+  display: inline-block;
+  margin-left: 7px;
+  position: relative;
+}
+.sectionBanner {
+  position: relative;
+  display: table;
+  width: 100%;
+}
+.sectionBanner .inner {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.sectionBanner .ct-rounded {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.95);
+  height: 460px;
+  width: 460px;
+  display: inline-table;
+}
+.sectionBanner .ct-rounded .ct-rounded-inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  padding: 0 15%;
+}
+.sectionBanner .ct-rounded .ct-rounded-inner p {
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+.fa { 
+  margin-top:30px;
+  font-size: 60px;
+  color: white;
+}
